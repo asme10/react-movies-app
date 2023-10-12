@@ -13,6 +13,8 @@ const App = () => {
   const [searchTerm, setSearchTerm] = useState("Harry Potter");
   const [isLoading, setIsLoading] = useState(true);
 
+  console.log(process.env);
+
   const searchMovies = async (title) => {
     setIsLoading(true);
     const res = await fetch(`${API_URL}&s=${title}`);
