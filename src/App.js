@@ -6,7 +6,7 @@ import MovieCard from "./components/MovieCard";
 import SearchForm from "./components/SearchForm";
 import Footer from "./components/Footer";
 
-const API_URL = process.env.REACT_APP_API_URL;
+const apiUrl = process.env.REACT_APP_OMDB;
 
 const App = () => {
   const [movies, setMovies] = useState([]);
@@ -15,7 +15,7 @@ const App = () => {
 
   const searchMovies = async (title) => {
     setIsLoading(true);
-    const res = await fetch(`${API_URL}&s=${title}`);
+    const res = await fetch(`${apiUrl}&s=${title}`);
     const data = await res.json();
 
     setMovies(data.Search);
