@@ -13,8 +13,6 @@ const App = () => {
   const [searchTerm, setSearchTerm] = useState("Harry Potter");
   const [isLoading, setIsLoading] = useState(true);
 
-  console.log(process.env);
-
   const searchMovies = async (title) => {
     setIsLoading(true);
     const res = await fetch(`${API_URL}&s=${title}`);
@@ -40,11 +38,7 @@ const App = () => {
         />
 
         <div className="row movies-container md mx-1 ">
-          {isLoading ? (
-            <div className="alert alert-success" role="alert">
-              <p>Loading...</p>
-            </div>
-          ) : movies?.length > 0 ? (
+          {movies?.length > 0 ? (
             movies.map((movie) => (
               <div key={movie.imdbID} className="col-lg-4">
                 <MovieCard movie={movie} />
