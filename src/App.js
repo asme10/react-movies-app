@@ -6,7 +6,7 @@ import MovieCard from "./components/MovieCard";
 import SearchForm from "./components/SearchForm";
 import Footer from "./components/Footer";
 
-const API_URL = "http://www.omdbapi.com/?apikey=43faa0ab";
+const API_URL = process.env.REACT_APP_API_URL;
 
 const App = () => {
   const [movies, setMovies] = useState([]);
