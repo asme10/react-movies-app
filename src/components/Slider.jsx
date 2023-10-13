@@ -12,21 +12,21 @@ const Slider = () => {
           <img
             src="https://images.pexels.com/photos/978587/pexels-photo-978587.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
             alt="Sea image"
-            class="d-block w-100 c-img"
+            className="d-block w-100 c-img"
           />
         </div>
         <div className="carousel-item c-item" data-bs-interval="2000">
           <img
             src="https://images.pexels.com/photos/275977/pexels-photo-275977.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
             alt="Actors image"
-            class="d-block w-100 c-img"
+            className="d-block w-100 c-img"
           />
         </div>
         <div className="carousel-item c-item">
           <img
             src="https://images.pexels.com/photos/14580928/pexels-photo-14580928.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
             alt="Mountain Image"
-            class="d-block w-100 c-img"
+            className="d-block w-100 c-img"
           />
         </div>
       </div>
