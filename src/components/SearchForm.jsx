@@ -1,6 +1,12 @@
 import React from "react";
 
-const SearchForm = ({ searchTerm, setSearchTerm, searchMovies }) => {
+const SearchForm = ({
+  searchMovies,
+  searchTerm,
+  setSearchTerm,
+  searchInputRef,
+  onSearchBarClick,
+}) => {
   return (
     <div className="row align-items-center mt-4 mb-3">
       <div className="col-md-8 offset-md-2">
@@ -11,6 +17,8 @@ const SearchForm = ({ searchTerm, setSearchTerm, searchMovies }) => {
             aria-label="Search"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
+            ref={searchInputRef}
+            onClick={onSearchBarClick}
           />
           <button
             className="btn btn-outline-success"
