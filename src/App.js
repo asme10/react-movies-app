@@ -6,7 +6,7 @@ import MovieCard from "./components/MovieCard";
 import SearchForm from "./components/SearchForm";
 import Footer from "./components/Footer";
 
-const apiUrl = process.env.REACT_APP_OMDB;
+const apiUrl = process.env.REACT_APP_OMDB.replace(/^http:/, "https:");
 
 const App = () => {
   const [movies, setMovies] = useState([]);
