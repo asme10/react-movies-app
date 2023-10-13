@@ -7,7 +7,6 @@ const SearchForm = ({ searchTerm, setSearchTerm, searchMovies }) => {
         <form className="search d-flex my-4" role="search">
           <input
             className="form-control me-2"
-            type="search"
             placeholder="Search here..."
             aria-label="Search"
             value={searchTerm}
